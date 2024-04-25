@@ -30,13 +30,13 @@ export const getRenewsLabel = (duration: string): string => {
   if (numberPeriods === 1) {
     switch (period.unit) {
       case PeriodUnit.Year:
-        return "yearly";
+        return "1年";
       case PeriodUnit.Month:
-        return "monthly";
+        return "1ヶ月";
       case PeriodUnit.Week:
-        return "weekly";
+        return "1週間";
       case PeriodUnit.Day:
-        return "daily";
+        return "1日";
     }
   } else {
     return `every ${numberPeriods} ${period.unit}s`;

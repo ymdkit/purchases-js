@@ -112,7 +112,7 @@
         }}
       >
         <ModalHeader>
-          <div>Secure Checkout</div>
+          <div>支払い</div>
           <IconLock />
         </ModalHeader>
         <ModalSection>
@@ -126,11 +126,11 @@
               {#if processing}
                 <ProcessingAnimation />
               {:else}
-                Pay
+                購入
               {/if}</Button
             >
             <Button disabled={processing} intent="secondary" on:click={onClose}
-              >Close</Button
+              >閉じる</Button
             >
           </RowLayout>
         </ModalFooter>

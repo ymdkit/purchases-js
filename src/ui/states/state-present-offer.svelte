@@ -15,9 +15,8 @@
       )}
     </span>
     <ul class="rcb-product-details">
-      <li>Billed {getRenewsLabel(productDetails.normalPeriodDuration)}</li>
-      <li>Continues until canceled</li>
-      <li>Cancel anytime</li>
+      <li>{getRenewsLabel(productDetails.normalPeriodDuration)}毎のお支払い</li>
+      <li>いつでもキャンセル可能</li>
     </ul>
   </div>
 </ModalSection>

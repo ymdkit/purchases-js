@@ -9,10 +9,10 @@
 
 <MessageLayout
   type="success"
-  title="Purchase successful"
+  title="購入完了"
   {brandingInfo}
   {onContinue}
 >
   <IconSuccess slot="icon" />
-  Your plan is now active.
+  プランが有効化されました
 </MessageLayout>

@@ -16,7 +16,7 @@
 
   const handleContinue = async () => {
     if (email.trim() === "") {
-      error = "You need to provide your email address to continue.";
+      error = "メールアドレスを入力してください";
     } else {
       onContinue({ email });
     }
@@ -24,10 +24,10 @@
 </script>
 
 <form on:submit|preventDefault={handleContinue}>
-  <ModalHeader>Billing email address</ModalHeader>
+  <ModalHeader>支払い用メールアドレスの入力</ModalHeader>
   <ModalSection>
     <div class="form-container">
-      <div class="form-label"><label for="email">Email</label></div>
+      <div class="form-label"><label for="email">メールアドレス</label></div>
       <div class="form-input {inputClass}">
         <input
           name="email"
@@ -45,11 +45,11 @@
         {#if processing}
           <ProcessingAnimation />
         {:else}
-          Continue
+          次へ
         {/if}
       </Button>
       <Button intent="secondary" on:click={onClose} disabled={processing}
-        >Close</Button
+        >閉じる</Button
       >
     </RowLayout>
   </ModalFooter>
